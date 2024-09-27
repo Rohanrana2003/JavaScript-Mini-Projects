@@ -1,6 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Playfair Display", serif;
+
+}
+
+.container{
+    background-color: #BBC6FA;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 50vw;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 10px 20px 0px rgb(0, 0, 0, .15);
+}
+
+.content h1{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.content h1::after{
+    content: " ";
+    height: 3px;
+    width: 79px;
+    background-color: #177CE5;
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    transform: translateX(50%);
+
+}
+
+#quote{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+    height: 100px;
+}
+
+#author{
+    position: absolute;
+    bottom: 130px;
+    right: 30px;
+}
+
+#author::before{
+    content: "";
+    width: 15px;
+    height: 2px;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: #177CE5;
+    
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+#new-quote{
+    background-color: #177CE5;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
+}
+#share{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 35px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid black;
+    cursor: pointer;
+    color: black;
+}
+
+
+.buttons img{
+    width: 30px;
 }
