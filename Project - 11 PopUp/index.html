@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PopUp</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="content">
+            <button id="submit" onclick={handleClick()}>Submit</button>
+        </div>
+
+        <div class="box">
+            <img src="404-tick.png" alt="">
+
+            <div>
+                <h2>Thank YOU!</h2>
+                <p>Your details have been successfully submitted. </p>
+                <p>Thanks!</p>
+
+            </div>
+            
+            <button onclick={handleOk()}>OK</button>
+
+        </div>
+    </div>
+    
+
+    <script>
+
+        function handleOk(){
+            document.querySelector('.box').style.display = 'none';
+        }
+
+        function handleClick(){
+            document.querySelector('.box').style.display = 'flex';
+        }
+
+
+    </script>
+</body>
+</html>
