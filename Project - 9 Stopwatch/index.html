@@ -7,8 +7,24 @@
     <title>Stopwatch</title>
 </head>
 <body>
-    
 
+    <div class="container">
+
+        <div class="clock">
+            
+            <div class="time">
+                <span id="hour">00</span> :  <span id="minute">00</span> : <span id="second">00</span>
+            </div>
+
+            <div class="buttons">
+                <img src="images/stop.png" id="stop" alt="" onclick={handleStop()}>
+                <img src="images/start.png" id="start" alt="" onclick={handleTime()}>
+                <img src="images/reset.png" id="reset" alt="" onclick={handleReset()}>
+            </div>
+
+        </div>
+
+    </div>
     
     <script src="script.js"></script>
 </body>
