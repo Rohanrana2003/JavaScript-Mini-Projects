@@ -3,12 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Toggle</title>
     <link rel="stylesheet" href="style.css">
-    <title>Hide Show Password</title>
 </head>
 <body>
-    
 
-    <script src="script.js"></script>
+    <div class="input-box">
+        <input type="password" placeholder="password" id="password">
+        <img src="images/eye-close.png" id="eyeicon">
+    </div>
+    
 </body>
+
+<script>
+
+    let eyeicon = document.getElementById('eyeicon');
+    let passowrd = document.getElementById('password')
+
+    eyeicon.onclick = function(){
+        if(passowrd.type == "password"){
+            passowrd.type = 'text';
+            eyeicon.src = 'images/eye-open.png'
+        }
+        else{
+            passowrd.type = 'password';
+            eyeicon.src = "images/eye-close.png";
+        }
+    }
+
+
+</script>
 </html>
