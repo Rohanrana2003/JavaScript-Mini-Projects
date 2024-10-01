@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <div class="hero">
+        <div class="calendar">
+            <div class="left">
+                <p id="date">01</p>
+                <p id="day">Sunday</p>
+
+            </div>
+            <div class="right">
+                <p id="month">January</p>
+                <p id="year">2020</p>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const date = document.getElementById('date');
+        const day = document.getElementById('day');
+        const month = document.getElementById('month');
+        const year = document.getElementById('year');
+
+        let newDate = new Date();
+
+        const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const allMonths =  ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+        date.innerHTML = (newDate.getDate()<10?"0":"")+newDate.getDate();
+        day.innerHTML = weekDays[newDate.getDay()];
+        month.innerHTML = allMonths[newDate.getMonth()];
+        year.innerHTML = newDate.getFullYear();
+
+        
+
+    </script>
 </body>
 </html>
