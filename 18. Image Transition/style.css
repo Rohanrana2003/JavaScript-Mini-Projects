@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box{
+    width: 60%;
+    position: relative;
+    background-image: url(background_change_img/background.png);
+}
+
+.img-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 20px;
+}
+span{
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    cursor: ew-resize;
+    left: 20px;
+}
+
+#arrow{
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+}
