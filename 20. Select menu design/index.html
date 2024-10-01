@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Select Menu</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="content">
+
+            <div class="top">
+                 <p id="value">Facebook</p>
+                 <img id="arrow" src="SelectMenu_Img/arrow.png" alt="">
+            </div>
+            
+            <ul class="bottom">
+
+                <li>
+                    <img src="SelectMenu_Img/facebook.png" alt="">
+                    <p>Facebook</p>
+                </li>
+                <li>
+                    <img src="SelectMenu_Img/youtube.png" alt="">
+                    <p>YouTube</p>
+                </li>
+                <li>
+                    <img src="SelectMenu_Img/instagram.png" alt="">
+                    <p>Instagram</p>
+                </li>
+                
+                <li>
+                    <img src="SelectMenu_Img/pinterest.png" alt="">
+                    <p>Pinterest</p>
+                </li>
+                <li>
+                    <img src="SelectMenu_Img/twitter.png" alt="">
+                    <p>Twitter</p>
+                </li>
+                <li>
+                    <img src="SelectMenu_Img/whatsapp.png" alt="">
+                    <p>WhatsApp</p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <script>
+
+        let button = document.querySelector('.top');
+        let options = document.querySelector('.bottom');
+        let sign = document.querySelector('#arrow') 
+        let value = document.querySelector('#value') 
+
+
+        button.addEventListener('click', ()=>{
+            options.classList.toggle('hide');
+            sign.classList.toggle('rotate')
+        })
+
+        options.addEventListener('click', (e)=>{
+            value.innerHTML = e.target.innerText
+            options.classList.toggle('hide');
+            sign.classList.toggle('rotate')
+        })
+
+
+    </script>
+</body>
+</html>
