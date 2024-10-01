@@ -3,3 +3,140 @@
     padding: 0;
     font-family: sans-serif;
 }
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #D0EAFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    height: 100%;
+    background-color: #241E20;
+    position: relative;
+}
+
+.left img{
+    width: 300px;
+    padding-top: 98px;
+}
+.controls{
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+
+.btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn.active{
+    background: #553ff0;
+    
+}
+
+.right{
+    height: 80%;
+    width: 230px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.details{
+    color: #333333;
+    padding-bottom: 30px;
+}
+
+.details h2{
+    color: #555555;
+}
+.details p{
+    color: #52D874;
+    font-weight: 600;
+}
+
+#desc{
+    color: #555555;
+    font-size: small;
+}
+
+.prop{
+    padding: 30px 0;
+    color: #555555;
+    font-size: 15px;
+}
+.prop div{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 25px;
+    padding: 15px 0;
+}
+.prop ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul li{
+    margin: 0 10px;
+}
+
+.quantity input{
+    width: 30px;
+    padding-left:10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #EEEEEE;
+}
+
+button{
+    width: 100%;
+    border-radius: 25px;
+    color: white;
+    background-color: #553ff0;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+}
+
+.color{
+    background-color: red;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#green{
+    background-color: #52D874;
+}
+#blue{
+    background-color: #0000FF;
+}
+#cream{
+    background-color: #FFC0CB;
+}
